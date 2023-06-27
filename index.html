@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Gran Hostal Chile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logoee.png" alt="Logo"> Gran Hostal Chile
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="changeBgButton">Cambiar Fondo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cajita">Reservas y Valores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#myForm">Formulario de Reservas</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header>
+        <div class="container-fluid position-relative">
+            <img id="bgImage" src="img/bg.png" alt="Imagen Principal" class="img-fluid">
+            <div class="header-content">
+                <h2>Nuestra Historia</h2>
+                <p><br>En el corazón de la impresionante región de Aysén, nace Gran Hostal Chile, el fruto de una pasión
+                    familiar por la majestuosidad de la Patagonia chilena y la hospitalidad. Todo comenzó con una idea
+                    simple pero emocionante: crear un lugar donde los viajeros de todo el mundo pudieran experimentar la
+                    belleza deslumbrante de la Patagonia, sin renunciar a la comodidad y a la tecnología que facilitan
+                    la vida moderna.
+
+                    Hemos trabajado incansablemente para hacer realidad este sueño, transformando una antigua estancia
+                    patagónica en un hostal moderno y acogedor. Nuestro objetivo ha sido siempre fusionar la belleza
+                    rústica de la Patagonia con la comodidad y la eficiencia de la tecnología moderna, y creemos que lo
+                    hemos logrado con Gran Hostal Chile.</p>
+            </div>
+        </div>
+       
+    </header>
+    <section>
+        <div class="container my-5">
+            <div class="container my-5">
+
+                <p class="cajita" id="cajita">
+                <h2 class=" text-center">Formulario de Reservas</h2><br><br>
+                <ol>
+                    <li> Nombre : Aquí debes ingresar el nombre de quien realiza la reserva. No se permiten espacios y
+                        la primera letra de tu nombre se convertirá automáticamente en mayúscula.</li> <br>
+                    <li> Fecha de inicio del hospedaje: Selecciona la fecha en la que planeas empezar tu estadía en Gran
+                        Hostal Chile. No puede ser una fecha posterior a la fecha de fin del hospedaje.</li> <br>
+                    <li> Fecha de fin del hospedaje: Selecciona la fecha en la que planeas terminar tu estadía en Gran
+                        Hostal Chile. Esta fecha debe ser posterior a la fecha de inicio del hospedaje.</li> <br>
+                    <li> Tipo de habitación: Aquí puedes seleccionar el tipo de habitación que prefieres. Las opciones
+                        son: Simple, Doble, Triple o Deluxe. Cada tipo de habitación tiene un precio diferente por
+                        noche.</li> <br>
+                    <li> Servicios adicionales: Puedes seleccionar uno o varios servicios adicionales que te gustaría
+                        tener durante tu estadía. Las opciones son: Desayuno, Internet, Agua caliente, y opción de
+                        llevar Mascotas.</li> <br>
+                    <li> Botón de enviar: Una vez que hayas llenado todos los campos, puedes hacer clic en este botón
+                        para enviar tu solicitud de reserva. Una vez enviada, recibirás un resumen de tu reserva y el
+                        precio total de tu estadía.</li> <br>
+                    <div class="container text-center">
+                        <strong>Asegúrate de revisar cuidadosamente la información antes de enviar la solicitud de
+                            reserva, para tener una mejor experiencia.</strong>
+                    </div>
+                    </p>
+                    <div class=" container text-center"><br><br>
+                        <h3>Valores Habitaciones:</h3>
+                    </div><br><br>
+                    <div class="estilocaja">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <img src="img/nv1.png" alt="Habitación Simple" height="60px">
+                                    Habitación Simple.<br> Precio 30.000 CLP por noche.
+                                </div>
+                                <div class="col-sm">
+                                    <img src="img/nv2.png" alt="Habitación Doble" height="60px">
+                                    Habitación Doble.<br> Precio 60.000 CLP por noche.
+                                </div>
+                                <div class="col-sm">
+                                    <img src="img/nv3.png" alt="Habitación Triple" height="60px">
+                                    Habitación Triple.<br> Precio 90.000 CLP por noche.
+                                </div>
+                                <div class="col-sm">
+                                    <img src="img/nv4.png" alt="Habitación Deluxe" height="60px">
+                                    Habitación Deluxe.<br> Precio 120.000 CLP por noche.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container text-center"> <br><br>
+                        <h3 class="display-5">Formulario de Reservas:<br><br></h3>
+                    </div><div class="formsestilo">
+                        <form id="myForm" method="GET">
+                        <div class="form-group">
+                            <label for="nombre">Nombre de quien realiza la reserva.</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre"
+                                placeholder="Ingrese su nombre" aria-label="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fechainicio">Fecha de Inicio del hospedaje.</label>
+                            <input type="date" class="form-control" id="fechainicio" name="fechainicio" aria-label="Fecha de Inicio" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fechafin">Fecha de Fin del hospedaje.</label>
+                            <input type="date" class="form-control" id="fechafin" name="fechafin" aria-label="Fecha fin" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="habitacion">Tipo de Habitación.</label>
+                            <select class="form-control" id="habitacion" name="habitacion"
+                                aria-label="Tipo de Habitación" required>
+                                <option value="simple">Simple</option>
+                                <option value="doble">Doble</option>
+                                <option value="triple">Triple</option>
+                                <option value="deluxe">Deluxe</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Servicios adicionales.</label><br>
+                            <input type="checkbox" id="desayuno" name="servicios[]" value="Desayuno">
+                            <label for="desayuno">Desayuno.</label><br>
+                            <input type="checkbox" id="internet" name="servicios[]" value="Internet">
+                            <label for="internet">Internet.</label><br>
+                            <input type="checkbox" id="aguacaliente" name="servicios[]" value="Agua caliente">
+                            <label for="aguacaliente">Agua caliente.</label><br>
+                            <input type="checkbox" id="mascotas" name="servicios[]" value="Mascotas">
+                            <label for="mascotas">Mascotas.</label><br>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Información.</button>
+                    </form>
+            </div></div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span class="text-muted">Contacto:
+                Puedes ponerte en contacto con nosotros a través de los siguientes canales:
+
+                Teléfono: +569 56401166
+                Correo electrónico: info@granhostalchile.cl
+                Sitio web: <a href="index.html">www.Granhostalchile.cl</a></span>
+        </div>
+    </footer>
+
+    <!-- Modal de confirmación de reserva -->
+    <div class="modal fade" id="reservaModal" tabindex="-1" role="dialog" aria-labelledby="reservaModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="reservaModalLabel">Resumen de la Reserva:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="nombreModal"></p>
+                    <p id="fechaInicioModal"></p>
+                    <p id="fechaFinModal"></p>              
+                    <p id="diasUtilizados"></p>
+                    <p id="precioTotal"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar Ventana</button>
+                    <button type="submit" form="myForm" class="btn btn-primary" id="confirmarReserva">Realizar Reservar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="validacion.js"></script>
+</body>
+<a id="topButton" href="#top" class="btn btn-primary btn-floating">↑</a>
+
+</html>
